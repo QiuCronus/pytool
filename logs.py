@@ -18,7 +18,7 @@ ERROR = "ERROR"
 
 @functools.lru_cache(maxsize=10)
 def getLogger(module):
-    # type: (str, str) -> Logger
+    # type: (str) -> Logger
     _log = Logger(
         core=Core(),
         exception=None,
